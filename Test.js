@@ -1,0 +1,13 @@
+let battery = new Battery();
+battery.setEnergy(10);
+let flashLamp = new FlashLamp();
+flashLamp.setBattery(battery);
+document.write("Battery Info" + flashLamp.getBetteryInfo() + "<br/>");
+flashLamp.light();
+document.write("Turn On <br>");
+flashLamp.turnOn();
+flashLamp.light();
+document.write("Battery Info" + flashLamp.getBetteryInfo() + "<br/>");
+document.write("Turn off <br>");
+flashLamp.turnOff();
+flashLamp.light();
